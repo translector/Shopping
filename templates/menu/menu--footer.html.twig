@@ -37,7 +37,7 @@
       {% if menu_level == 0 and item.is_expanded and item.below %}
         <a{{ item.link_attributes.addClass(['dropdown-toggle', item.in_active_trail ? 'active-trail']) | without('data-toggle') }} href="{{ item.url }}" data-toggle="dropdown">{{ item.title }}<span class="caret"></span></a>
       {% else %}
-        <a{{ item.link_attributes.addClass(item.in_active_trail ? 'active-trail') }} href="{{ item.url }}">{{ item.title }}asdsadsad</a>
+        <a{{ item.link_attributes.addClass(item.in_active_trail ? 'active-trail') }} href="{{ item.url }}">{{ item.title }}</a>
       {% endif %}
       {% if item.below %}
         {{ _self.menu_links(item.below, attributes.removeClass(classes), menu_level + 1, classes) }}

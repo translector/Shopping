@@ -1,0 +1,119 @@
+/*#navbar.navbar-inverse {
+	background: white;
+	border-color: white;
+}
+
+#navbar .logo img {
+    width: fit-content;
+}
+#navbar li>a {
+    color: #4daee1;
+}
+
+#navbar ul.dropdown-menu{
+	min-width: -webkit-fill-available;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: aliceblue;
+    text-decoration: underline;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #333;
+}
+
+
+li a:hover:not(.active) {
+    background-color: #0496df || #42525a;
+    font-weight: bold;
+    color: white;
+}
+.main-enlaces li a.is-active { text-decoration: underline;}
+*/
+
+
+
+/*
+
+.global-search{
+	background: darkgray;
+    padding-top: 15px;
+}
+
+#headerFather.main-header{
+	background: white;
+}
+.brand-logo img{
+	width: 100%;
+	height: : auto;
+
+}
+.logo{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: no-repeat top left;
+    vertical-align: middle;
+    margin-top: 0;
+}
+.logo.branding-costanera{
+    background-image: url(/themes/real/images/svg/costanera01.svg);
+}
+.logo.branding-costanera2{
+    background-image: url(/themes/real/images/co.png);
+}
+.logo.branding-costanera{
+    background-position: 0 -10px;
+}
+
+.main-enlaces.fl-right{
+	text-align: right;
+}
+.main-enlaces.fl-left{
+	text-align: left;
+}
+	
+.main-enlaces.fl-right li{
+	display: inline-block;
+	padding: 0 15px;
+}
+.main-enlaces.fl-left li{
+	display: inline-block;
+	text-align: : left;
+	padding: 0 15px;
+}
+.main-enlaces li a { color: #4daee1;}
+*/
+#navbar .icons{
+    display: inline-block;
+    width: 36px;
+    background: no-repeat top left;
+    vertical-align: middle;
+    margin-top: 0;
+    padding: 0;
+}
+.icons.facebook{
+   content: url(/themes/bootstrap/images/icons/facebook.png);
+}
+.icons.twitter{
+   content: url(/themes/bootstrap/images/icons/twitter.png);
+}
+.icons.instagram{
+   content: url(/themes/bootstrap/images/icons/instagram.png);
+}
+/* Mobile */
+@media only screen and (max-width:768px) {
+	.navbar-toggle .icon-bar {
+		background: #337ab7;
+	}
+}
+/* Tablet */	
+@media (min-width:415px) and (max-width:950px) {
+
+}
+/* Desktop */
+@media (min-width:951px) and (max-width:1600px) {
+	
+}
+

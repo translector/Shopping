@@ -26,8 +26,8 @@
         <h4 class="arrowLeft">{{ item.title }}</h4>
         <ul>
         {% for subitem in item.below %}
-          <li class="listFooter">
-            {{ subitem.title }}
+          <li class="listFooter-inline">
+            <a class="{{ subitem.title }}" href="{{ subitem.url }}" target="_blank"></a>
           </li>
         {% endfor %}
         </ul>

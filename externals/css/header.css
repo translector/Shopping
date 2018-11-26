@@ -3,9 +3,7 @@
 	border-color: white;
 }
 
-#navbar .logo img {
-    width: fit-content;
-}
+
 #navbar li>a {
     color: #4daee1;
 }
@@ -85,6 +83,9 @@ li a:hover:not(.active) {
 }
 .main-enlaces li a { color: #4daee1;}
 */
+#navbar a.logo>img {
+    width: 100px;
+}
 #navbar .icons{
     display: inline-block;
     width: 36px;

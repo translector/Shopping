@@ -21,8 +21,34 @@
 	color: #ffffff;
 }
 
-link-icon face
+#block-footercenter ul>li>a.face-ico:after{
+    background-image: url('../../images/icons/face-ico-white.png');
+    background-size: 40px 40px;
+    display: inline-block;
+    width: 40px; 
+    height: 40px;
+    content:"";
+}
+#block-footercenter ul>li>a.insta-ico:after{
+    background-image: url('../../images/icons/insta-ico-white.png');
+    background-size: 40px 40px;
+    display: inline-block;
+    width: 40px; 
+    height: 40px;
+    content:"";
+}
+#block-footercenter ul>li>a.twitt-ico:after{
+    background-image: url('../../images/icons/twitt-ico-white.png');
+    background-size: 40px 40px;
+    display: inline-block;
+    width: 40px; 
+    height: 40px;
+    content:"";
+}
 
+#block-footercenter ul>li.listFooter-inline{
+	display: inline;
+}
 /* Mobile */
 @media only screen and (max-width:576px) {
 

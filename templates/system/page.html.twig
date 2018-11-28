@@ -52,26 +52,40 @@
  */
 #}
 {% include directory ~ '/partials/header.html.twig' %}
-
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {# Main #}
 {% block main %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
-    <div class="row">
-
+    <div class="row" id="top-bar">
       {# Header #}
       {% if page.header %}
         {% block header %}
-          <div class="col-sm-12" role="heading">
             {{ page.header }}
-          </div>
         {% endblock %}
       {% endif %}
+    </div>
 
+    <div class="row container-fluid" id="highlighted">
+      {# Highlighted #}
+      {% if page.highlighted %}
+        {% block highlighted %}
+          <div class="highlighted">{{ page.highlighted }}</div>
+        {% endblock %}
+      {% endif %}
+    </div>
+    <div class="row" id="contenido-pricipal">
+      {# size sidebars #}
+      {%
+        set sidebar_cols = 
+          page.sidebar_first and page.sidebar_second ? 'col-sm-3' :
+          page.sidebar_first and page.sidebar_second is empty ? 'col-sm-5' :
+          page.sidebar_second and page.sidebar_first is empty ? 'col-sm-5'
+        
+      %}
       {# Sidebar First #}
       {% if page.sidebar_first %}
         {% block sidebar_first %}
-          <aside class="col-sm-3" role="complementary">
+          <aside class="{{ sidebar_cols }}" role="complementary">
             {{ page.sidebar_first }}
           </aside>
         {% endblock %}
@@ -81,20 +95,12 @@
       {%
         set content_classes = [
           page.sidebar_first and page.sidebar_second ? 'col-sm-6',
-          page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
-          page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
+          page.sidebar_first and page.sidebar_second is empty ? 'col-sm-7',
+          page.sidebar_second and page.sidebar_first is empty ? 'col-sm-7',
           page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
         ]
       %}
       <section{{ content_attributes.addClass(content_classes) }}>
-
-        {# Highlighted #}
-        {% if page.highlighted %}
-          {% block highlighted %}
-            <div class="highlighted">{{ page.highlighted }}</div>
-          {% endblock %}
-        {% endif %}
-
         {# Help #}
         {% if page.help %}
           {% block help %}
@@ -104,7 +110,6 @@
 
         {# Content #}
         {% block content %}
-          <a id="main-content"></a>
           {{ page.content }}
         {% endblock %}
       </section>
@@ -112,7 +117,7 @@
       {# Sidebar Second #}
       {% if page.sidebar_second %}
         {% block sidebar_second %}
-          <aside class="col-sm-3" role="complementary">
+          <aside class="{{ sidebar_cols }}" role="complementary">
             {{ page.sidebar_second }}
           </aside>
         {% endblock %}

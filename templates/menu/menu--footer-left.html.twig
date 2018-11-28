@@ -23,7 +23,9 @@
     <div class="col-md-4 col-xs-12">
     {% for item in items %}
       {% if menu_level == 0 and item.is_expanded and item.below %}
-        <h4 class="arrowLeft">{{ item.title }}</h4>
+        <h4 class="arrowLeft">{{ item.title }}
+          <a class="pull-right" href="/node/8">Ver más ></a>
+        </h4> 
         <ul>
         {% for subitem in item.below %}
           <li class="listFooter">

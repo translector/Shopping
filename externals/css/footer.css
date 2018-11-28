@@ -2,8 +2,11 @@
 * estilos del archivo:
 * /partials/header.html.twig
 */
+#footer{
+	margin-top: unset;
+}
 .footer {
-  background-color: #0496df;
+  background-color: #5bc0de;
   color: #ffffff;
   /*padding: 40px 0 30px 0; */
 }
@@ -20,7 +23,9 @@
 .footer a{
 	color: #ffffff;
 }
-
+h4.arrowLeft>a.pull-right{
+	font-size: 14px;
+}
 #block-footercenter ul>li>a.face-ico:after{
     background-image: url('../../images/icons/face-ico-white.png');
     background-size: 40px 40px;

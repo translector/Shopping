@@ -162,6 +162,7 @@ global-components:
   css:
     theme:
       externals/css/header.css: {}
+      externals/css/content.css: {}
       externals/css/footer.css: {}
 #  js:
 #    js/custom.js: {}

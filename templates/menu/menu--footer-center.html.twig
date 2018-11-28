@@ -32,7 +32,9 @@
         {% endfor %}
         </ul>
       {% else %}
-        <h4 class="arrowLeft">{{ item.title }}</h4>
+        <h4 class="arrowLeft">{{ item.title }}
+          <a class="pull-right" href="/node/9">Ver más ></a>
+        </h4>
       {% endif %}
     {% endfor %}
     </div>

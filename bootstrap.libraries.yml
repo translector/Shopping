@@ -161,6 +161,7 @@ global-components:
   Version: 1.x
   css:
     theme:
+      externals/css/global.css: {}
       externals/css/header.css: {}
       externals/css/content.css: {}
       externals/css/footer.css: {}

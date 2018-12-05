@@ -1,3 +1,15 @@
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'futura-light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/futura_std-light.otf');
+}
+html,body{
+	font-family: futura-light;
+}
+
+
 #top-bar h1.page-header{
 	padding-left: 20px;
 	margin-bottom: 0;
